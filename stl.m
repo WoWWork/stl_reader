@@ -60,8 +60,5 @@ end
 fclose(fid);
 
 figure(1)
-%T = delaunay(elements(:, 1:3:7), elements(:, 2:3:8));
-%TO = triangulation(T, elements(:, 1:3:7), elements(:, 2:3:8), elements(:, 3:3:9));
-%plot3(elements(:, 1:3:7), elements(:, 2:3:8), elements(:, 3:3:9))
-%[X, Y] = meshgrid(elements(:, 1:3:7), elements(:, 2:3:8));
+
 surf(elements(:, 1:3:7), elements(:, 2:3:8), elements(:, 3:3:9), 'FaceColor', 'g');
