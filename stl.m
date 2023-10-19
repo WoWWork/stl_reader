@@ -1,5 +1,5 @@
 clear all
-fid=fopen('C:\\Users\\User\\Desktop\\STL_model\\blankd12.stl', 'r');
+fid=fopen('Your path of stl file', 'r');
 number = 0;
 count = 1;
 
