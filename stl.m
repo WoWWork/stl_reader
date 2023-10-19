@@ -15,9 +15,7 @@ colors = zeros(number, 1);
 while ~feof(fid)
     %tline = fgetl(fid);
     if (count > number)
-        if(fgetl(fid) == -1)
             break;
-        end
     end
     
     v = [0 0 0];
