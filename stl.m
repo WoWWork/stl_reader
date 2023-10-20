@@ -12,12 +12,9 @@ vectors = zeros(number, 3);
 elements = zeros(number, 9);
 colors = zeros(number, 1);
 
-while ~feof(fid)
+while ~feof(fid) && count <= number
     %tline = fgetl(fid);
-    if (count > number)
-            break;
-    end
-    
+
     v = [0 0 0];
     for j = 1 : 3
         for i = 1 : 4
